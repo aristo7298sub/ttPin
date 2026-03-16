@@ -680,6 +680,57 @@ textarea::placeholder {
   border-top: 1px solid var(--border);
 }
 
+/* Auth mode radio group */
+.ttPinRadioGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.ttPinRadioLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.ttPinRadioLabel input[type="radio"] {
+  margin: 0;
+  accent-color: var(--accent);
+}
+
+/* Device code sign-in */
+.ttPinDeviceCode {
+  padding: 12px 14px;
+  background: rgba(111, 143, 166, 0.08);
+  border: 1px solid rgba(111, 143, 166, 0.25);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.ttPinDeviceCode p {
+  margin: 0 0 6px;
+}
+
+.ttPinDeviceCodeValue {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: monospace;
+  letter-spacing: 2px;
+  color: var(--accent);
+}
+
+.ttPinLink {
+  color: var(--accent);
+  text-decoration: underline;
+  word-break: break-all;
+}
+
 .ttPinButton {
   padding: 10px 18px;
   border-radius: 10px;
