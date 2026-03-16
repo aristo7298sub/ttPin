@@ -11,16 +11,17 @@
 
 ## 界面预览
 
-![ttPin 主界面](docs/screenshots/main.png?v=1.0.0)
+![ttPin 主界面](docs/screenshots/main.png?v=1.1.0)
 
-![ttPin 设置页](docs/screenshots/settings.png?v=1.0.0)
+![ttPin 设置页](docs/screenshots/settings.png?v=1.1.0)
 
 ## 功能特性
 
 - 🚀 快捷键唤出桌面翻译卡片
 - 🎯 基于 Azure AI Foundry Translator (LLM) 的高质量翻译
 - 🔊 语音合成（TTS）：支持句子/单词发音（选中优先，否则朗读全文）
-- 📚 生词本管理（单词+翻译+例句+本地存储）
+- � 多种认证方式：API Key / Azure CLI (`az login`) / Entra ID 服务主体
+- �📚 生词本管理（单词+翻译+例句+本地存储）
 - 🌐 中英文界面切换
 - 🔑 用户自配置 Azure 资源（密钥仅保存在本机，不会进入仓库或 Release）
 - 💾 本地数据存储（无需联网同步）
@@ -58,7 +59,7 @@ ttPin/
 	- `ttPin_*_x64-setup.exe`（NSIS 安装器）或 `ttPin_*_x64_en-US.msi`（MSI 安装器）
 3. 启动 ttPin → 打开【设置】→ 填写你的 Azure 翻译配置：
 	- 翻译端点（Translate Endpoint）
-	- 订阅密钥（Subscription Key）
+	- 认证方式：API Key / Azure CLI (`az login`) / Entra ID 服务主体（三选一）
 	- 区域（Region）
 	- AOAI 部署名称（AOAI Deployment Name，通常为 `gpt-4o` 或 `gpt-4o-mini`）
 4. 使用快捷键 `Ctrl+Shift+T` 唤出翻译窗口。
